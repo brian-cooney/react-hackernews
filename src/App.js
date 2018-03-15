@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Fake data API
 
 const list = [
   {
     title: 'React',
     url: 'https://facebook.github.io/react',
-    author: 'Jordon Walke',
+    author: 'Jordon Walker',
     num_comments: 3,
     points: 4,
     objectID: 0,
@@ -42,6 +43,7 @@ class App extends Component {
               </span>
               <span>{item.author}</span>
               <span>{item.num_comments}</span>
+              <span>{item.points}</span>
               <span>{item.points}</span>
             </div>
         )}
