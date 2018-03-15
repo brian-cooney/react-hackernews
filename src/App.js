@@ -44,7 +44,6 @@ class App extends Component {
               <span>{item.author}</span>
               <span>{item.num_comments}</span>
               <span>{item.points}</span>
-              <span>{item.points}</span>
             </div>
         )}
       </div>
