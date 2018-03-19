@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// Fake data API
 
 const list = [
   {
     title: 'React',
     url: 'https://facebook.github.io/react',
-    author: 'Jordon Walke',
+    author: 'Jordon Walker',
     num_comments: 3,
     points: 4,
     objectID: 0,
