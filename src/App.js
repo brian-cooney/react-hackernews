@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -28,7 +27,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: list,
+      list,
     }
   };
 
@@ -43,6 +42,14 @@ class App extends Component {
               <span>{item.author}</span>
               <span>{item.num_comments}</span>
               <span>{item.points}</span>
+              <span>
+                <button
+                onClick={() => this.onDismiss(item.objectID)}
+                type="button"
+                >
+                Dismiss
+                </button>
+              </span>
             </div>
         )}
       </div>
