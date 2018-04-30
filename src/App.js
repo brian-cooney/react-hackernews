@@ -30,12 +30,13 @@ class App extends Component {
     this.state = {
       list,
     }
+    this.onDismiss = this.onDismiss.bind(this)
   };
 
   render() {
     return (
       <div className="App">
-        {this.state.list.map(item => 
+        {this.state.list.map(item =>
             <div key={item.objectID}>
               <span>
                 <a href={item.url}>{item.title}</a>
